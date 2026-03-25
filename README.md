@@ -25,7 +25,7 @@ So the public story is not sparse superiority. The interesting result is a perfo
 
 ## Public contents
 
-This public repo includes:
+This repository includes:
 
 - core implementation under `src/`
 - CLI/task wrappers under `scripts/`
@@ -39,22 +39,6 @@ Public docs kept in this release:
 - `docs/EVALUATION_PLAN.md`
 - `docs/REPRODUCIBILITY_AND_ENV.md`
 - `docs/CLAIMS_MATRIX.md`
-
-## Intentionally omitted
-
-This GitHub-facing release is intentionally minimal.
-
-It does not include:
-
-- generated run outputs
-- cached activations
-- local checkpoints
-- downloaded raw datasets
-- internal milestone logs
-- internal paper-packaging bundles
-- machine-specific experiment configs
-
-Those materials existed in the internal research workspace, but they are not part of this first public cut.
 
 ## Repo layout
 
@@ -79,9 +63,7 @@ python -m ruff check src tests scripts
 
 ## Reproducibility note
 
-The public release keeps the method and evaluation logic, but not the full internal experiment workspace. Some internal experiments depended on local model checkpoints and local run artifacts that are intentionally not published here.
-
-If a later reproducibility package is prepared, it should use sanitized example configs rather than the original machine-specific run configs.
+The repository contains the core method and evaluation code used in the project. Environment and reproduction details are summarized in `docs/REPRODUCIBILITY_AND_ENV.md`.
 
 ## Public framing
 
