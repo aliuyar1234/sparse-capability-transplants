@@ -1,0 +1,11 @@
+
+\begin{tabularx}{\textwidth}{l l X}
+\toprule
+Case & Winner & Summary \\
+\midrule
+Unsupported request & Sparse over dense & On unsupported NoCall prompts, sparse often returned a single \texttt{NO\_TOOL} object where dense emitted extra fenced JSON or an unnecessary tool call. \\
+Missing-tool request & Sparse over base & When the requested action was unavailable, sparse more often abstained with \texttt{NO\_TOOL} instead of forcing a tool call. \\
+Surface-form robustness & Dense over sparse & Dense more often preserved argument keys correctly when a call was appropriate, while sparse more often failed on argument-key exactness. \\
+Control suite & Tie / sparse edge & Sparse and steering produced no recorded control-damage examples in the saved appendix bundle; dense produced one capitalization-only deviation. \\
+\bottomrule
+\end{tabularx}

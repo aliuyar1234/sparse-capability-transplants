@@ -1,5 +1,11 @@
 # Sparse Capability Transplants
 
+[![Preprint PDF](https://img.shields.io/badge/Preprint-PDF-B31B1B?style=flat-square&logo=adobeacrobatreader&logoColor=white)](https://github.com/aliuyar1234/sparse-capability-transplants/raw/main/same-size-capability-transfer-tradeoff-preprint.pdf)
+[![Paper Source](https://img.shields.io/badge/Paper-LaTeX-008080?style=flat-square&logo=latex&logoColor=white)](https://github.com/aliuyar1234/sparse-capability-transplants/tree/main/paper)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/aliuyar1234/sparse-capability-transplants/blob/main/pyproject.toml)
+[![Evaluation](https://img.shields.io/badge/Evaluation-Deterministic-1F6FEB?style=flat-square)](https://github.com/aliuyar1234/sparse-capability-transplants/blob/main/docs/EVALUATION_PLAN.md)
+[![Scope](https://img.shields.io/badge/Scope-Same--Size%20Transfer-5B4B8A?style=flat-square)](https://github.com/aliuyar1234/sparse-capability-transplants/blob/main/docs/RESEARCH_BRIEF.md)
+
 Research code and core documentation for studying same-size capability transfer in function calling.
 
 ## Overview
@@ -41,6 +47,7 @@ The most important headline numbers from the closed `V24` path are:
 
 This repository is meant to be a clean paper-companion codebase. It includes:
 
+- `paper/` - public LaTeX source for the manuscript
 - `src/` - model, eval, train, and analysis code
 - `scripts/` - thin task wrappers
 - `tests/` - unit and integration coverage plus small fixtures

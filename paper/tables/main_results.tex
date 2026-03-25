@@ -1,0 +1,20 @@
+
+\begingroup
+\hfuzz=6pt
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}llS[table-format=1.4]S[table-format=1.4]S[table-format=1.4]c@{}}
+\toprule
+System & Evidence & {Strict} & {Recovery} & {Control drop} & {Params} \\
+\midrule
+Base & single & 0.0375 & 0.0000 & 0.0000 & 0 \\
+Donor & single & 0.1781 & 1.0000 & 0.0000 & -- \\
+Steering shortcut & single & 0.1078 & 0.5000 & -0.0063 & \num{1152} \\
+Sparse module & single & 0.2068 & 1.2037 & -0.0141 & \num{590081} \\
+Dense shortcut & single & 0.1854 & 1.0519 & -0.0016 & \num{591232} \\
+\midrule
+Sparse module & 3 seeds & 0.1658 & 0.9123 & -0.0057 & \num{590081} \\
+Dense shortcut & 3 seeds & 0.2177 & 1.2815 & -0.0109 & \num{591232} \\
+\bottomrule
+\end{tabular}%
+}
+\endgroup
