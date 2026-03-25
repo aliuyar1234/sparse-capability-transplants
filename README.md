@@ -1,10 +1,12 @@
 # Sparse Capability Transplants
 
-Code and core documentation for a research project on same-size capability transfer in function calling.
+Research code and core documentation for studying same-size capability transfer in function calling.
 
 ## Overview
 
-This repository studies whether a narrow function-calling capability can be transferred from a stronger donor model into an untuned weaker model using a fixed internal module rather than full recipient retraining.
+This project asks a focused question:
+
+Can a narrow function-calling capability be transferred from a stronger donor model into an untuned weaker model using a fixed internal module, rather than full recipient retraining?
 
 The public release is intentionally narrow:
 
@@ -13,39 +15,65 @@ The public release is intentionally narrow:
 - deterministic JSON grading
 - same-size transfer only
 
-## Main result
+## Key finding
 
-The strongest final result is:
+The final result is not a sparse-superiority paper.
+
+The strongest honest takeaway is:
 
 - same-size transfer is real on this task
 - sparse interventions are not noise and show partial localization structure
 - dense parameter-matched controls outperform sparse interventions on the matched multiseed comparison
 
-So the public story is not sparse superiority. The interesting result is a performance-versus-localization tradeoff.
+The interesting result is therefore a performance-versus-localization tradeoff, not a clean sparse win.
 
-## Public contents
+## Main numbers
 
-This repository includes:
+The most important headline numbers from the closed `V24` path are:
 
-- core implementation under `src/`
-- CLI/task wrappers under `scripts/`
-- tests and fixtures under `tests/`
-- a small curated doc surface under `docs/`
+- donor-gap primary metric: base `0.0375`, donor `0.178125`
+- best sparse single-seed frozen eval: `0.2068`
+- sparse multiseed mean: `0.1658`
+- dense multiseed mean: `0.2177`
+- selected `1`-feature subset retained-gain fraction: `0.4708`
 
-Public docs kept in this release:
+## What this repository contains
 
-- `docs/RESEARCH_BRIEF.md`
-- `docs/METHOD_SPEC.md`
-- `docs/EVALUATION_PLAN.md`
-- `docs/REPRODUCIBILITY_AND_ENV.md`
-- `docs/CLAIMS_MATRIX.md`
-
-## Repo layout
+This repository is meant to be a clean paper-companion codebase. It includes:
 
 - `src/` - model, eval, train, and analysis code
 - `scripts/` - thin task wrappers
 - `tests/` - unit and integration coverage plus small fixtures
-- `docs/` - public research, method, and evaluation docs
+- `docs/` - curated public research, method, and evaluation docs
+
+The public docs to read first are:
+
+1. `docs/RESEARCH_BRIEF.md`
+2. `docs/METHOD_SPEC.md`
+3. `docs/EVALUATION_PLAN.md`
+4. `docs/CLAIMS_MATRIX.md`
+5. `docs/REPRODUCIBILITY_AND_ENV.md`
+
+## How to read this repo
+
+If you want the high-level research story:
+
+- start with `docs/RESEARCH_BRIEF.md`
+- then read `docs/CLAIMS_MATRIX.md`
+
+If you want the exact method:
+
+- read `docs/METHOD_SPEC.md`
+
+If you want the evaluation contract:
+
+- read `docs/EVALUATION_PLAN.md`
+
+If you want to work with the code:
+
+- start in `src/`
+- use `scripts/task.py` as the CLI entrypoint
+- use `tests/` for expected behavior and small fixtures
 
 ## Local development
 
@@ -61,13 +89,13 @@ python -m pytest -q
 python -m ruff check src tests scripts
 ```
 
-## Reproducibility note
+## Reproducibility
 
 The repository contains the core method and evaluation code used in the project. Environment and reproduction details are summarized in `docs/REPRODUCIBILITY_AND_ENV.md`.
 
-## Public framing
+## Paper framing
 
-If you are reading this repo as a paper companion, the intended takeaway is:
+If you are reading this repo as a paper companion, the intended interpretation is:
 
 > same-size capability transfer is real in this setting, but the best-performing same-size mechanism is not maximally sparse.
 
