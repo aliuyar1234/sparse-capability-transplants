@@ -1,6 +1,6 @@
 # Sparse Capability Transplants
 
-[![Preprint PDF](https://img.shields.io/badge/Preprint-PDF-B31B1B?style=flat-square&logo=adobeacrobatreader&logoColor=white)](https://github.com/aliuyar1234/sparse-capability-transplants/raw/main/same-size-capability-transfer-tradeoff-preprint.pdf)
+[![Paper PDF](https://img.shields.io/badge/Paper-PDF-B31B1B?style=flat-square&logo=adobeacrobatreader&logoColor=white)](https://github.com/aliuyar1234/sparse-capability-transplants/raw/main/ali-uyar-same-size-capability-transfer.pdf)
 [![Paper Source](https://img.shields.io/badge/Paper-LaTeX-008080?style=flat-square&logo=latex&logoColor=white)](https://github.com/aliuyar1234/sparse-capability-transplants/tree/main/paper)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/aliuyar1234/sparse-capability-transplants/blob/main/pyproject.toml)
 [![Evaluation](https://img.shields.io/badge/Evaluation-Deterministic-1F6FEB?style=flat-square)](https://github.com/aliuyar1234/sparse-capability-transplants/blob/main/docs/EVALUATION_PLAN.md)
