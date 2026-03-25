@@ -1,0 +1,38 @@
+# Minimal public GitHub release
+
+# Python/cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+pytest-cache-files-*/
+.venv/
+venv/
+
+# Packaging/build residue
+*.egg-info/
+build/
+dist/
+
+# Local env / OS clutter
+.env
+.env.*
+.DS_Store
+Thumbs.db
+
+# Generated research outputs and local data
+artifacts/
+runs/
+
+# Internal run configs and scratch outputs
+configs/
+tests/_tmp/
+
+# Keep only the small public markdown surface
+*.md
+!README.md
+!docs/RESEARCH_BRIEF.md
+!docs/METHOD_SPEC.md
+!docs/EVALUATION_PLAN.md
+!docs/REPRODUCIBILITY_AND_ENV.md
+!docs/CLAIMS_MATRIX.md

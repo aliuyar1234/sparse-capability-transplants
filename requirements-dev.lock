@@ -1,0 +1,18 @@
+# Locked bootstrap environment captured during M0 on 2026-03-23.
+# Install with:
+#   python -m pip install -e ".[dev]"
+#
+# This lockfile covers the repo's current direct and dev dependencies plus
+# the validated pytest runtime dependencies. Model-stack pins
+# (torch/transformers/peft/trl) remain deferred until the training stack is
+# selected explicitly.
+
+PyYAML==6.0.3
+pytest==8.4.2
+ruff==0.11.13
+
+colorama==0.4.6
+iniconfig==2.3.0
+packaging==25.0
+pluggy==1.6.0
+Pygments==2.19.2
