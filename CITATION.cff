@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it using the metadata below."
+title: "Sparse Capability Transplants"
+type: software
+authors:
+  - family-names: "Uyar"
+    given-names: "Ali"
+abstract: >-
+  Research code and manuscript source for studying same-size capability transfer
+  in deterministic single-turn function calling.
+repository-code: "https://github.com/aliuyar1234/sparse-capability-transplants"
+url: "https://github.com/aliuyar1234/sparse-capability-transplants"
+version: "v0.1.0"
+date-released: "2026-03-25"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.19226753
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "Uyar"
+      given-names: "Ali"
+  title: "Sparse Capability Transplants"
+  version: "v0.1.0"
+  doi: 10.5281/zenodo.19226753
+  date-released: "2026-03-25"
+  url: "https://doi.org/10.5281/zenodo.19226753"

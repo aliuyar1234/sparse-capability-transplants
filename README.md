@@ -2,6 +2,7 @@
 
 [![Paper PDF](https://img.shields.io/badge/Paper-PDF-B31B1B?style=flat-square&logo=adobeacrobatreader&logoColor=white)](https://github.com/aliuyar1234/sparse-capability-transplants/raw/main/ali-uyar-same-size-capability-transfer.pdf)
 [![Paper Source](https://img.shields.io/badge/Paper-LaTeX-008080?style=flat-square&logo=latex&logoColor=white)](https://github.com/aliuyar1234/sparse-capability-transplants/tree/main/paper)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19226753.svg)](https://doi.org/10.5281/zenodo.19226753)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/aliuyar1234/sparse-capability-transplants/blob/main/pyproject.toml)
 [![Evaluation](https://img.shields.io/badge/Evaluation-Deterministic-1F6FEB?style=flat-square)](https://github.com/aliuyar1234/sparse-capability-transplants/blob/main/docs/EVALUATION_PLAN.md)
 [![Scope](https://img.shields.io/badge/Scope-Same--Size%20Transfer-5B4B8A?style=flat-square)](https://github.com/aliuyar1234/sparse-capability-transplants/blob/main/docs/RESEARCH_BRIEF.md)
@@ -99,6 +100,14 @@ python -m ruff check src tests scripts
 ## Reproducibility
 
 The repository contains the core method and evaluation code used in the project. Environment and reproduction details are summarized in `docs/REPRODUCIBILITY_AND_ENV.md`.
+
+## Citation
+
+If you use this repository, please cite the Zenodo software release:
+
+> Uyar, A. (2026). *Sparse Capability Transplants* (v0.1.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.19226753
+
+GitHub citation metadata is provided in `CITATION.cff`.
 
 ## Paper framing
 
